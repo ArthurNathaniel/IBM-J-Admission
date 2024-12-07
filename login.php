@@ -64,6 +64,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </form>
         </div>
     </div>
+    <script>
+        function togglePassword() {
+            const passwordField = document.getElementById('password');
+            const showPasswordCheckbox = document.getElementById('show-password');
+            
+            // Toggle the type of the password field
+            passwordField.type = showPasswordCheckbox.checked ? 'text' : 'password';
+        }
+    </script>
 </body>
 
 </html>

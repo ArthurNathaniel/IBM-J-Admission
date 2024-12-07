@@ -8,11 +8,17 @@
 }
 body {
   font-family: "Onest", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
   background-color: #F4F4F8;
   width: 100%;
   overflow-x: hidden;
 }
-
+.forms_group{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
 .forms{
     display: flex;
     flex-direction: column;
@@ -23,12 +29,16 @@ body {
     height: 40px;
     width: 100%;
     padding-left: 3%;
+    border: 1.5px solid #ddd;
+    background-color: #fff;
 }
 
 .forms select{
   height: 40px;
   width: 100%;
   padding-left: 3%;
+  border: 1.5px solid #ddd;
+  background-color: #fff;
 }
 
 .forms button{
@@ -41,4 +51,135 @@ body {
 .forms_title{
   text-align: center;
   margin-top: 20px;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+.logo {
+  height: 90px;
+  width: 100px;
+  background-image: url(../images/logo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 20px;
+}
+
+.navbar_all {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: center;
+  position: sticky;
+  top: 0;
+  z-index: 454;
+  padding-block: 5px;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  background-color: #fff;
+  padding: 0 10%;
+}
+
+.mobile a {
+  padding: 15px;
+  color: #000;
+}
+
+.mobile a:hover {
+  color: #333;
+}
+
+#toggleButton {
+  position: absolute;
+  top: 50;
+  right: 10%;
+ background-color: transparent;
+ border: none;
+  color: #2C2C74;
+  padding: 15px 30px;
+}
+
+#toggleButton i {
+  color: #2C2C74;
+  font-size: 20px;
+}
+
+.mobile {
+  display: none;
+}
+
+.mobile {
+  position: absolute;
+  top: 0px;
+  z-index: 4554;
+  left: 0;
+  width: 250px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  display: none;
+  height: 100vh;
+  padding-top: 45px;
+  overflow-y: scroll;
+}
+
+.mobile a {
+  border-bottom: 2px dashed #dad9da;
+  width: 100%;
+  padding: 0 10%;
+  padding-block: 20px;
+}
+
+.logout {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #c8af66;
+  border: none;
+}
+
+.logout a {
+  color: #fff !important;
+  border: none;
+}
+
+.navbar_all .mobile a.active {
+  background-color: #2C2C74;
+  color: #fff;
+}
+
+.dashed {
+  border-top: 2px dashed #dad9da;
+  margin-top: 30px;
 }

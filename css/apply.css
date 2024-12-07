@@ -1,0 +1,12 @@
+.apply_all{
+padding: 0 10%;
+margin-block: 70px;
+}
+
+.note_div{
+    background-color: #fff; 
+    padding: 0 2%;
+    padding-block: 40px;
+    border-left: 10px solid red;
+    margin-bottom: 30px;
+}
