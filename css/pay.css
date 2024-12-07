@@ -1,0 +1,31 @@
+.all {
+    padding: 0 35%;
+    margin-block: 50px;
+  }
+  
+  .all_box {
+    background-color: #fff;
+    padding: 0 5%;
+    padding-block: 50px;
+  }
+  
+  .logo_img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo_img img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 0 auto;
+  }
+  
+  @media only screen and (max-width: 1110px) {
+    .all {
+      padding: 0 5%;
+    }
+  }
+  
